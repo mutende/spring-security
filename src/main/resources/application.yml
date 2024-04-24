@@ -1,0 +1,20 @@
+
+spring:
+  application:
+    name: oath2
+  datasource:
+    url: jdbc:mariadb://127.0.0.1:3306/db
+    username: db_user
+    password: db_pass
+    driver-class-name: org.mariadb.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    database: mysql
+    database-platform: org.hibernate.dialect.MariaDBDialect
+server:
+  port: 8081
